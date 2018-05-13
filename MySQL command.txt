@@ -1,0 +1,16 @@
+mysql -h db.soic.indiana.edu -u i308s18_kim918 --pass=my+sql=i308s18_kim918 -D i308s18_kim918
+
+mysql -h db.soic.indiana.edu -u i308s18_team30 --pass=my+sql=i308s18_team30 -D i308s18_team30
+
+mysql -h db.soic.indiana.edu -u i308_data --pass=my+sql=i308_data -D i308_dataset
+
+export the sql file:
+
+mysqldump -u i308s18_kim918 -p i308s18_kim918 > kim918_lab8.sql
+
+
+SHOW tables;
+DESCRIBE Tablename;
+SELECT * FROM ...;
+INSERT INTO ... ('','','',...) VALUES ('','','',...);
+DROP ...;

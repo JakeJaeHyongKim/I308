@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jake Kim</title>
+
+<style>
+
+
+body {
+    background-color: lightblue;
+}
+
+div {
+    background-color: lightgreen;
+}
+
+table, th, td {
+    border: 0.5px solid black;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Lab 1 Assignment</h1>
+
+<div style="color:gray">
+  <p>I'm graduating with almost 140 credits.</p>
+</div>
+
+<div style="color:blue">
+  <p>I did task 1 through 8 and 12.</p>
+</div>
+
+<div style="color:white">
+  <p>Graduating in December 2018, being here for 9 semesters</p>
+</div>
+
+<div style="color:red">
+  <p>NEED more A's.</p>
+</div>
+
+<h2>First TASKS 1-3</h2>
+
+<h3>Second TASKS 4-6</h3>
+
+
+<div id="me" title="majors" style="color: white; font: Helvetica 12pt;border: 1px solid black;">
+  <h4>Who is me?</h4>
+  <p>list of <br>my majors<br> and <br>cognates</p>
+</div>
+
+<p>I am <span style="color:red; font-weight:bold"> double majoring</span> for my bachelor's degree</p>
+
+<ul>
+<li>Human Resource Management in SPEA</li>
+<li>Informatics in SOIC</li>
+<li>Human-Centered Computing Cognate in SOIC</li>
+</ul>
+
+<table style="width:100%">
+  <tr>
+    <th>Class</th>
+    <th>Relationship between major</th> 
+  </tr>
+  <tr>
+    <td>BUS-F300</td>
+    <td>Human Resource Management</td> 
+  </tr>
+  <tr>
+    <td>INFO-I308</td>
+    <td>Informatics</td> 
+  </tr>
+</table>
+
+
+
+<a href="https://spea.indiana.edu">SPEA OFFICIAL WEBSITE</a>
+<br>
+<a href="https://spea.indiana.edu">
+  <img src="http://newsinfo.iu.edu/pub/libs/images/usr/4223.jpg" width="400" height="300" alt="SPEA Official Image">
+</a>
+<br>
+<a href="https://sice.indiana.edu">SICE OFFICIAL WEBSITE</a>
+<br>
+<a href="https://sice.indiana.edu">
+  <img src="https://d10k7k7mywg42z.cloudfront.net/assets/599da47e4078086b330025ba/IU_SICE_Logo.png" width="400" height="300" alt="SICE Official Image">
+</a>
+
+<br>
+<a href="https://www.linkedin.com/in/jakejhkim/">MY LINKEDIN PAGE</a>
+
+<p>Now, do you know<span style="color:orange; font-weight:bold">me?</span></p>
+
+
+</body>
+</html>

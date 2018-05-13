@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Working Shifts</h2><br>
+<form action="week13.php" method="post">
+Order_Date: <input type="date" name="wdate" min=¡±2003-01-02¡± required><br>
+
+Time_of_order: <input type = ¡°time¡± name=¡±wtime¡± required><br>
+
+Roles: <select name="roles">
+<option value = ¡°manager¡±><manager></option>
+<option value = ¡°chef¡±>chef</option>
+<option value = ¡°hostess¡±>hostess</option>
+<option value = ¡°busser¡±>busser</option>
+
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+

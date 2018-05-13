@@ -1,0 +1,25 @@
+<?php
+$con=mysqli_connect("db.soic.indiana.edu","i308s18_team30","my+sql=i308s18_team30", "i308s18_team30");
+// Check connection
+if (mysqli_connect_errno())
+{echo nl2br("Failed to connect to MySQL: " . mysqli_connect_error() . "\n "); }
+else 
+{ echo nl2br("Established Database Connection \n");}
+
+$sql="SELECT CONCAT(a.fname,' ',a.lname) AS name, 
+DATE_FORMAT(ib.date_in,'%Y') FROM artist AS a, in_band AS ib 
+WHERE a.aid=ib.aid";
+
+$result=mysqli_query($conn,$sql);
+if ($result->num_rows > 0) {
+    echo "<table><tr><th>Name</th><th>year_joined</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>".$row["name"]."</td><td>".$row["date_in"]."</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+
+mysqli_close($conn);
+?>

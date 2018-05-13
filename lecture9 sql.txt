@@ -1,0 +1,39 @@
+Excercise #1
+SELECT b.title, sum(b.price)
+FROM book as b, customer as c, trans as t
+WHERE c.id = t.id and t.bookid = b.bookid and c.name = 'Jenny'
+GROUP BY b.title;
+
+Excercise #2
+SELECT distinct b.title, c.name 
+FROM customer as c, book as b, trans as t
+WHERE c.id = t.id and t.bookid = b.bookid 
+    AND (b.title='The Code Book' or b.price>40);
+
+Excercise #3
+CREATE VIEW ctb AS 
+SELECT c.name, c.phone, b.title, b.price, t.tdate
+FROM customer as c, book as b, trans as t
+WHERE c.id=t.id and t.bookid=b.bookid;
+
+Excercise #4
+SELECT c.name, c.phone
+FROM customer as c
+WHERE c.phone Like '555-%';
+
+Excercise #5
+SELECT c.name, c.phone, DATE_FORMAT(t.tdate, 'b% D% Y%')
+FROM customer as c, trans as t
+WHERE c.id = t.id AND t.tdate LIKE '2017-10-%';
+
+
+Excercise #6
+SELECT m.item_name, sum(od.qty),sum(m.price* od.qty), om.order_date
+FROM menu as m, order_detail as od, order_main as om
+WHERE m.menuid = od.menuid and od.orderid = om.orderid and om.order_date = '2003-11-08'
+GROUP BY m.item_name;
+
+#Excercise #7
+SELECT CONCAT('e.fname',' ','e.lname'), ws.role
+FROM employee as e, works_shift as ws, order_main as om
+WHERE e.empid=om.empid AND om.orderid='3902'
